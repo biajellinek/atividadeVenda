@@ -74,7 +74,7 @@ public class AnimalController {
 		Page<Animal> lista = this.animalService.findAll(numPaginaAtual);
 		return new ResponseEntity<>(lista, HttpStatus.OK);
 	}
-	//sdfsdfbbfd
+	//sdfsdfbbfd//pagincaocaooo testeee
 	@GetMapping ("/findById/{idAnimal}")
 	public ResponseEntity<Animal> findById (@PathVariable ("idAnimal") long idAnimal){
 			Animal animal = this.animalService.findById(idAnimal);
